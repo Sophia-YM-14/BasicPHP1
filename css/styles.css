@@ -120,3 +120,81 @@ footer {
   position: fixed;
   bottom: 0;
 }
+
+main {
+  padding-bottom: 70px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.activity-card,
+.store-facts,
+main > section {
+  padding: 10px 20px;
+}
+
+.order-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 15px;
+  align-items: end;
+  max-width: 850px;
+  margin: 15px 20px;
+}
+
+.order-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 700;
+}
+
+.order-form input,
+.order-form select {
+  padding: 9px;
+  border: 1px solid #fbccbf;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.order-form .button {
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  height: 42px;
+}
+
+.status,
+.order-summary {
+  background-color: #730720;
+  border-left: 5px solid #fcba63;
+  margin: 15px 20px;
+  padding: 12px 15px;
+}
+
+.status {
+  font-weight: 700;
+}
+
+.welcome {
+  font-size: 1.1em;
+}
+
+.warning {
+  color: #fcba63;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .order-form {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    position: static;
+  }
+
+  main {
+    padding-bottom: 10px;
+  }
+}
