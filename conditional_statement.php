@@ -45,17 +45,17 @@ switch ($candyName) {
 
         <p>Welcome, <?php echo $name; ?>!</p>
 
-        <h2>If-Else: Check Candy Stock</h2>
+        <h2>Check Candy Stock</h2><!-- Using an if statement to check candy stock -->
         <p>Candy: <?php echo $candyName; ?></p>
         <p>Price per pack: $<?php echo $price; ?></p>
         <p>Available packs: <?php echo $stock; ?></p>
         <p>Packs ordered: <?php echo $ordered; ?></p>
         <p><?php echo $stockMessage; ?></p>
 
-        <h2>Switch: Candy Description</h2>
+        <h2>Candy Description</h2><!-- Using a switch statement to provide a description for each candy -->
         <p><?php echo $candyMessage; ?></p>
 
-        <h2>Nutrition (per 100g)</h2>
+        <h2>Nutrition (per 100g)</h2><!-- Using a for-each loop to display nutrition facts -->
         <p>Fat: <?php echo $nutrition['fat']; ?>%</p>
         <p>Sugar: <?php echo $nutrition['sugar']; ?>%</p>
         <p>Salt: <?php echo $nutrition['salt']; ?>%</p>
