@@ -28,6 +28,7 @@ function get_tax_due(float $price, int $quantity, int $tax = 0): float
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Functions Example</title>
         <link rel="stylesheet" href="css/supply.css">
     </head>
@@ -51,8 +52,8 @@ function get_tax_due(float $price, int $quantity, int $tax = 0): float
                             <td><?= $product_name ?></td>
                             <td><?= $data['stock'] ?></td>
                             <td><?= get_reorder_message($data['stock']) ?></td>
-                            <td>$<?= get_total_value($data['price'], $data['stock']) ?></td>
-                            <td>$<?= get_tax_due($data['price'], $data['stock'], $tax) ?></td>
+                            <td>₱<?= get_total_value($data['price'], $data['stock']) ?></td>
+                            <td>₱<?= get_tax_due($data['price'], $data['stock'], $tax) ?></td>
                         </tr>
                     <?php } ?>    
                 </table>
